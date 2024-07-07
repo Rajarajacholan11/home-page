@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home page</title>
+  <link rel="stylesheet" href="css/ruf.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+</head>
+<body>
+  
+  <nav>
+    <h2 class="logo">GRnetwork</h2>
+
+    <ul>
+      <li class="hom">Home</li>
+      <li class="hom">Courses</li>
+      <li class="hom">About</li>
+      <li class="hom">Contact</li>
+      <li class="hom">blog</li>
+      <li class="men-btn" onclick="show()"><i class="fa-solid fa-bars  menu-btn"></i></li>
+    </ul>
+    <!--sidebar-->
+    <ul class="sidebar">
+      <li onclick="hide()"><i class="fa-solid fa-xmark  cancel-btn"></i></li>
+      
+      <li>Home</li>
+      <li>Courses</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>blog</li>
+    </ul>
+  </nav>
+
+  <!--home-->
+  <section>
+    <div class="container">
+    <div class="row">
+    
+        <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-6  col-xxl-6  colh1" id="hcol">
+          <h1>Empower your Learning journey</h1>
+          <p>unlock your potential with our expertly crafted courses,designed for all levels of learners </p>
+          <button>Enroll now</button>
+        </div>
+        
+      
+    </div>
+  </div>
+  </section>
+
+
+  <script>
+    const menu=document.querySelector("menu-btn");
+    const cancel=document.querySelector(".canccel-btn");
+    function  show()
+    {
+      let side=document.querySelector(".sidebar");
+      side.style.display="flex";
+
+    }
+    function  hide()
+    {
+      let side=document.querySelector(".sidebar");
+      side.style.display="none";
+
+    }  
+    
+  
+  </script>
+</body>
+</html>
